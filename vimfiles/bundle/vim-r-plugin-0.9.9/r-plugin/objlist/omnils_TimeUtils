@@ -1,0 +1,19 @@
+as.begOfMonfunctionfunctionTimeUtilsx
+as.begOfQtrfunctionfunctionTimeUtilsx
+as.begOfYearfunctionfunctionTimeUtilsx
+as.chron2POSIXctfunctionfunctionTimeUtilsx
+as.dtcharfunctionfunctionTimeUtilsx
+as.endOfQtrfunctionfunctionTimeUtilsx
+as.endOfYearfunctionfunctionTimeUtilsx
+CreateBOMVectorfunctionfunctionTimeUtilsfromas.chron("2001-01-01")	toas.chron("2010-01-01")
+CreateBOQVectorfunctionfunctionTimeUtilsfromas.chron("2010-01-01")	toas.chron("2011-01-01")
+CreateBOYVectorfunctionfunctionTimeUtilsfromas.chron("2010-01-01")	toas.chron("2011-01-01")
+CreateChronVectorfunctionfunctionTimeUtilschronFrom	chronTo	frequency"hourly"
+CreateYearQtrVectorfunctionfunctionTimeUtilsfromas.chron("2010-01-01")	toas.chron("2011-01-01")
+CreateYearVectorfunctionfunctionTimeUtilsfromas.chron("2010-01-01")	toas.chron("2011-01-01")
+m2mmfunctionfunctionTimeUtilsm
+RoundHourfunctionfunctionTimeUtilsx
+xlDate2ChronfunctionfunctionTimeUtilsx
+xlDateTime2ChronfunctionfunctionTimeUtilsx
+YearLagfunctionfunctionTimeUtilsdas.chron("2010-01-01")	y1
+yy2yyyyfunctionfunctionTimeUtilsyy

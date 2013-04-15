@@ -1,0 +1,19 @@
+myFilter    <-  with(tcd, Outliers == FALSE  &  Lines %in% c(1,2,3,4)  &  Dates >= from  &  Dates <= to)
+stackedData <-  Stack(tcd[myFilter, ], 
+      select=c('E1','W1','E2','W2'),
+      carryover=c('Dates', 'Lines', 'LineCombination'))
+  symbol      <-  trellis.par.get('superpose.symbol')
+  symbol$pch  <-  c(25)
+  symbol$cex  <-  1.5
+  symbol$alpha<-  0.5
+  
+  trellis.par.set('superpose.symbol', symbol)
+	print(xyplot(values~as.chron2POSIXct(Dates)| as.LCFactor(LineCombination),
+          xlab='',ylab='Flow, mgd',
+          groups=ind,
+          data=stackedData,
+          as.table=TRUE, 
+          ylim=c(150,220),
+          auto.key=list(columns=2),
+          scales=list(y=list(relation='free')),
+          drop.unused.levels=T, layout=c(1,4)))

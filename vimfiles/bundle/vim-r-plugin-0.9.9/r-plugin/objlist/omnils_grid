@@ -1,0 +1,182 @@
+absolute.sizefunctionfunctiongridunit
+addGrobfunctionfunctiongridgTree	child	gPathNULL	strictFALSE	grepFALSE	globalFALSE	warnTRUE
+applyEditfunctionfunctiongridx	edit
+applyEditsfunctionfunctiongridx	edits
+arcCurvaturefunctionfunctiongridtheta
+arrowfunctionfunctiongridangle30	lengthunit(0.25, "inches")	ends"last"	type"open"
+arrowsGrobfunctionfunctiongridxc(0.25, 0.75)	y0.5	default.units"npc"	grobNULL	angle30	lengthunit(0.25, "inches")	ends"last"	type"open"	nameNULL	gpgpar()	vpNULL
+ascentDetailsfunctionfunctiongridx
+bezierGrobfunctionfunctiongridxc(0, 0.5, 1, 0.5)	yc(0.5, 1, 0.5, 0)	idNULL	id.lengthsNULL	default.units"npc"	arrowNULL	nameNULL	gpgpar()	vpNULL
+bezierPointsfunctionfunctiongridx
+calcStringMetricfunctionfunctiongridtext
+childNamesfunctionfunctiongridgTree
+circleGrobfunctionfunctiongridx0.5	y0.5	r0.5	default.units"npc"	nameNULL	gpgpar()	vpNULL
+clipGrobfunctionfunctiongridxunit(0.5, "npc")	yunit(0.5, "npc")	widthunit(1, "npc")	heightunit(1, "npc")	just"centre"	hjustNULL	vjustNULL	default.units"npc"	nameNULL	vpNULL
+convertHeightfunctionfunctiongridx	unitTo	valueOnlyFALSE
+convertNativefunctionfunctiongridunit	dimension"x"	type"location"
+convertUnitfunctionfunctiongridx	unitTo	axisFrom"x"	typeFrom"location"	axisTo	typeTo	valueOnlyFALSE
+convertWidthfunctionfunctiongridx	unitTo	valueOnlyFALSE
+convertXfunctionfunctiongridx	unitTo	valueOnlyFALSE
+convertYfunctionfunctiongridx	unitTo	valueOnlyFALSE
+current.transformfunctionfunctiongridNO_ARGS
+current.viewportfunctionfunctiongridvpNULL
+current.vpPathfunctionfunctiongridNO_ARGS
+current.vpTreefunctionfunctiongridallTRUE
+curveGrobfunctionfunctiongridx1	y1	x2	y2	default.units"npc"	curvature1	angle90	ncp1	shape0.5	squareTRUE	squareShape1	inflectFALSE	arrowNULL	openTRUE	debugFALSE	nameNULL	gpgpar()	vpNULL
+dataViewportfunctionfunctiongridxDataNULL	yDataNULL	xscaleNULL	yscaleNULL	extension0.05	...
+descentDetailsfunctionfunctiongridx
+downViewportfunctionfunctiongridname	strictFALSE	recordingTRUE
+draw.detailsfunctionfunctiongridx	recording
+drawDetailsfunctionfunctiongridx	recording
+editDetailsfunctionfunctiongridx	specs
+editGrobfunctionfunctiongridgrob	gPathNULL	...	strictFALSE	grepFALSE	globalFALSE	warnTRUE
+engine.display.listfunctionfunctiongridonTRUE
+frameGrobfunctionfunctiongridlayoutNULL	nameNULL	gpgpar()	vpNULL
+functionGrobfunctionfunctiongridf	n101	range"x"	units"native"	nameNULL	gpgpar()	vpNULL
+gEditfunctionfunctiongrid...
+gEditListfunctionfunctiongrid...
+get.gparfunctionfunctiongridnamesNULL
+getGrobfunctionfunctiongridgTree	gPath	strictFALSE	grepFALSE	globalFALSE
+getNamesfunctionfunctiongridNO_ARGS
+gListfunctionfunctiongrid...
+gparfunctionfunctiongrid...
+gPathfunctionfunctiongrid...
+grid.ablinefunctionfunctiongridintercept0	slope1	...
+grid.addfunctionfunctiongridgPath	child	strictFALSE	grepFALSE	globalFALSE	allDevicesFALSE	redrawTRUE
+grid.arrowsfunctionfunctiongridxc(0.25, 0.75)	y0.5	default.units"npc"	grobNULL	angle30	lengthunit(0.25, "inches")	ends"last"	type"open"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.bezierfunctionfunctiongrid...
+grid.capfunctionfunctiongridNO_ARGS
+grid.circlefunctionfunctiongridx0.5	y0.5	r0.5	default.units"npc"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.clipfunctionfunctiongrid...
+grid.collectionfunctionfunctiongrid...	gpgpar()	drawTRUE	vpNULL
+grid.convertfunctionfunctiongridx	unitTo	axisFrom"x"	typeFrom"location"	axisTo	typeTo	valueOnlyFALSE
+grid.convertHeightfunctionfunctiongridx	unitTo	valueOnlyFALSE
+grid.convertWidthfunctionfunctiongridx	unitTo	valueOnlyFALSE
+grid.convertXfunctionfunctiongridx	unitTo	valueOnlyFALSE
+grid.convertYfunctionfunctiongridx	unitTo	valueOnlyFALSE
+grid.copyfunctionfunctiongridgrob
+grid.curvefunctionfunctiongrid...
+grid.display.listfunctionfunctiongridonTRUE
+grid.DLapplyfunctionfunctiongridFUN	...
+grid.drawfunctionfunctiongridx	recordingTRUE
+grid.editfunctionfunctiongridgPath	...	strictFALSE	grepFALSE	globalFALSE	allDevicesFALSE	redrawTRUE
+grid.framefunctionfunctiongridlayoutNULL	nameNULL	gpgpar()	vpNULL	drawTRUE
+grid.functionfunctionfunctiongrid...
+grid.geditfunctionfunctiongrid...	grepTRUE	globalTRUE
+grid.getfunctionfunctiongridgPath	strictFALSE	grepFALSE	globalFALSE	allDevicesFALSE
+grid.ggetfunctionfunctiongrid...	grepTRUE	globalTRUE
+grid.grabfunctionfunctiongridwarn2	wrapFALSE	...
+grid.grabExprfunctionfunctiongridexpr	warn2	wrapFALSE	...
+grid.gremovefunctionfunctiongrid...	grepTRUE	globalTRUE
+grid.grillfunctionfunctiongridhunit(seq(0.25, 0.75, 0.25), "npc")	vunit(seq(0.25, 0.75, 0.25), "npc")	default.units"npc"	gpgpar(col = "grey")	vpNULL
+grid.grobfunctionfunctiongridlist.struct	clNULL	drawTRUE
+grid.layoutfunctionfunctiongridnrow1	ncol1	widthsunit(rep(1, ncol), "null")	heightsunit(rep(1, nrow), "null")	default.units"null"	respectFALSE	just"centre"
+grid.legendfunctionfunctiongridpch	labels	frameTRUE	hgapunit(0.5, "lines")	vgapunit(0.5, "lines")	default.units"lines"	gpgpar()	drawTRUE	vpNULL
+grid.line.tofunctionfunctiongridx1	y1	default.units"npc"	arrowNULL	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.linesfunctionfunctiongridxunit(c(0, 1), "npc")	yunit(c(0, 1), "npc")	default.units"npc"	arrowNULL	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.locatorfunctionfunctiongridunit"native"
+grid.lsfunctionfunctiongridxNULL	grobsTRUE	viewportsFALSE	fullNamesFALSE	recursiveTRUE	printTRUE	flattenTRUE	...
+grid.move.tofunctionfunctiongridx0	y0	default.units"npc"	nameNULL	drawTRUE	vpNULL
+grid.multipanelfunctionfunctiongridxstats::runif(90)	ystats::runif(90)	zstats::runif(90)	nplots9	nrow5	ncol2	newpageTRUE	vpNULL
+grid.newpagefunctionfunctiongridrecordingTRUE
+grid.nullfunctionfunctiongrid...
+grid.packfunctionfunctiongridgPath	grob	redrawTRUE	sideNULL	rowNULL	row.beforeNULL	row.afterNULL	colNULL	col.beforeNULL	col.afterNULL	widthNULL	heightNULL	force.widthFALSE	force.heightFALSE	borderNULL	dynamicFALSE
+grid.panelfunctionfunctiongridxstats::runif(10)	ystats::runif(10)	zrangec(0, 1)	zbinstats::runif(2)	xscaleextendrange(x)	yscaleextendrange(y)	axis.leftTRUE	axis.left.labelTRUE	axis.rightFALSE	axis.right.labelTRUE	axis.bottomTRUE	axis.bottom.labelTRUE	axis.topFALSE	axis.top.labelTRUE	vpNULL
+grid.pathfunctionfunctiongrid...
+grid.placefunctionfunctiongridgPath	grob	row1	col1	redrawTRUE
+grid.plot.and.legendfunctionfunctiongridNO_ARGS
+grid.pointsfunctionfunctiongridxstats::runif(10)	ystats::runif(10)	pch1	sizeunit(1, "char")	default.units"native"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.polygonfunctionfunctiongridxc(0, 0.5, 1, 0.5)	yc(0.5, 1, 0.5, 0)	idNULL	id.lengthsNULL	default.units"npc"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.polylinefunctionfunctiongrid...
+grid.prettyfunctionfunctiongridrange
+grid.promptfunctionfunctiongridask
+grid.rasterfunctionfunctiongridimage	xunit(0.5, "npc")	yunit(0.5, "npc")	widthNULL	heightNULL	just"centre"	hjustNULL	vjustNULL	interpolateTRUE	default.units"npc"	nameNULL	gpgpar()	vpNULL
+grid.recordfunctionfunctiongridexpr	list	nameNULL	gpNULL	vpNULL
+grid.rectfunctionfunctiongridxunit(0.5, "npc")	yunit(0.5, "npc")	widthunit(1, "npc")	heightunit(1, "npc")	just"centre"	hjustNULL	vjustNULL	default.units"npc"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.refreshfunctionfunctiongridNO_ARGS
+grid.removefunctionfunctiongridgPath	warnTRUE	strictFALSE	grepFALSE	globalFALSE	allDevicesFALSE	redrawTRUE
+grid.roundrectfunctionfunctiongrid...
+grid.segmentsfunctionfunctiongridx0unit(0, "npc")	y0unit(0, "npc")	x1unit(1, "npc")	y1unit(1, "npc")	default.units"npc"	arrowNULL	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.setfunctionfunctiongridgPath	newGrob	strictFALSE	grepFALSE	redrawTRUE
+grid.show.layoutfunctionfunctiongridl	newpageTRUE	bg"light grey"	cell.border"blue"	cell.fill"light blue"	cell.labelTRUE	label.col"blue"	unit.col"red"	vpNULL
+grid.show.viewportfunctionfunctiongridv	parent.layoutNULL	newpageTRUE	border.fill"light grey"	vp.col"blue"	vp.fill"light blue"	scale.col"red"	vpNULL
+grid.stripfunctionfunctiongridlabel"whatever"	range.fullc(0, 1)	range.thumbc(0.3, 0.6)	fill"#FFBF00"	thumb"#FF8000"	vpNULL
+grid.textfunctionfunctiongridlabel	xunit(0.5, "npc")	yunit(0.5, "npc")	just"centre"	hjustNULL	vjustNULL	rot0	check.overlapFALSE	default.units"npc"	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.xaxisfunctionfunctiongridatNULL	labelTRUE	mainTRUE	editsNULL	nameNULL	gpgpar()	drawTRUE	vpNULL
+grid.xsplinefunctionfunctiongrid...
+grid.yaxisfunctionfunctiongridatNULL	labelTRUE	mainTRUE	editsNULL	nameNULL	gpgpar()	drawTRUE	vpNULL
+grobfunctionfunctiongrid...	nameNULL	gpNULL	vpNULL	clNULL
+grobAscentfunctionfunctiongridx
+grobDescentfunctionfunctiongridx
+grobHeightfunctionfunctiongridx
+grobNamefunctionfunctiongridgrobNULL	prefix"GRID"
+grobPathListingfunctionfunctiongridx	...
+grobTreefunctionfunctiongrid...	nameNULL	gpNULL	vpNULL	childrenvpNULL	clNULL
+grobWidthfunctionfunctiongridx
+grobXfunctionfunctiongridx	theta
+grobYfunctionfunctiongridx	theta
+gTreefunctionfunctiongrid...	nameNULL	gpNULL	vpNULL	childrenNULL	childrenvpNULL	clNULL
+heightDetailsfunctionfunctiongridx
+is.grobfunctionfunctiongridx
+is.unitfunctionfunctiongridunit
+layout.heightsfunctionfunctiongridlay
+layout.torturefunctionfunctiongridNO_ARGS
+layout.widthsfunctionfunctiongridlay
+layoutRegionfunctionfunctiongridlayout.pos.row1	layout.pos.col1
+linesGrobfunctionfunctiongridxunit(c(0, 1), "npc")	yunit(c(0, 1), "npc")	default.units"npc"	arrowNULL	nameNULL	gpgpar()	vpNULL
+lineToGrobfunctionfunctiongridx1	y1	default.units"npc"	arrowNULL	nameNULL	gpgpar()	vpNULL
+moveToGrobfunctionfunctiongridx0	y0	default.units"npc"	nameNULL	vpNULL
+nestedListingfunctionfunctiongridx	gindent"  "	vpindent
+nullGrobfunctionfunctiongridxunit(0.5, "npc")	yunit(0.5, "npc")	default.units"npc"	nameNULL	vpNULL
+packGrobfunctionfunctiongridframe	grob	sideNULL	rowNULL	row.beforeNULL	row.afterNULL	colNULL	col.beforeNULL	col.afterNULL	widthNULL	heightNULL	force.widthFALSE	force.heightFALSE	borderNULL	dynamicFALSE
+pathGrobfunctionfunctiongridx	y	idNULL	id.lengthsNULL	rule"winding"	default.units"npc"	nameNULL	gpgpar()	vpNULL
+pathListingfunctionfunctiongridx	gvpSep" | "	gAlignTRUE
+placeGrobfunctionfunctiongridframe	grob	rowNULL	colNULL
+plotViewportfunctionfunctiongridmarginsc(5.1, 4.1, 4.1, 2.1)	...
+pointsGrobfunctionfunctiongridxstats::runif(10)	ystats::runif(10)	pch1	sizeunit(1, "char")	default.units"native"	nameNULL	gpgpar()	vpNULL
+polygonGrobfunctionfunctiongridxc(0, 0.5, 1, 0.5)	yc(0.5, 1, 0.5, 0)	idNULL	id.lengthsNULL	default.units"npc"	nameNULL	gpgpar()	vpNULL
+polylineGrobfunctionfunctiongridxunit(c(0, 1), "npc")	yunit(c(0, 1), "npc")	idNULL	id.lengthsNULL	default.units"npc"	arrowNULL	nameNULL	gpgpar()	vpNULL
+pop.viewportfunctionfunctiongridn1	recordingTRUE
+popViewportfunctionfunctiongridn1	recordingTRUE
+postDrawDetailsfunctionfunctiongridx
+preDrawDetailsfunctionfunctiongridx
+push.viewportfunctionfunctiongrid...	recordingTRUE
+pushViewportfunctionfunctiongrid...	recordingTRUE
+rasterGrobfunctionfunctiongridimage	xunit(0.5, "npc")	yunit(0.5, "npc")	widthNULL	heightNULL	just"centre"	hjustNULL	vjustNULL	interpolateTRUE	default.units"npc"	nameNULL	gpgpar()	vpNULL
+rectGrobfunctionfunctiongridxunit(0.5, "npc")	yunit(0.5, "npc")	widthunit(1, "npc")	heightunit(1, "npc")	just"centre"	hjustNULL	vjustNULL	default.units"npc"	nameNULL	gpgpar()	vpNULL
+removeGrobfunctionfunctiongridgTree	gPath	strictFALSE	grepFALSE	globalFALSE	warnTRUE
+roundrectGrobfunctionfunctiongridx0.5	y0.5	width1	height1	default.units"npc"	runit(0.1, "snpc")	just"centre"	nameNULL	gpNULL	vpNULL
+seekViewportfunctionfunctiongridname	recordingTRUE
+segmentsGrobfunctionfunctiongridx0unit(0, "npc")	y0unit(0, "npc")	x1unit(1, "npc")	y1unit(1, "npc")	default.units"npc"	arrowNULL	nameNULL	gpgpar()	vpNULL
+setChildrenfunctionfunctiongridx	children
+setGrobfunctionfunctiongridgTree	gPath	newGrob	strictFALSE	grepFALSE
+showGrobfunctionfunctiongridxNULL	gPathNULL	strictFALSE	grepFALSE	recurseTRUE	depthNULL	labelfun	...
+showViewportfunctionfunctiongridvpNULL	recurseTRUE	depthNULL	newpageFALSE	leavesFALSE	colrgb(0, 0, 1, 0.2)	fillrgb(0, 0, 1, 0.1)	labelTRUE	nrow3	ncol
+stringAscentfunctionfunctiongridstring
+stringDescentfunctionfunctiongridstring
+stringHeightfunctionfunctiongridstring
+stringWidthfunctionfunctiongridstring
+textGrobfunctionfunctiongridlabel	xunit(0.5, "npc")	yunit(0.5, "npc")	just"centre"	hjustNULL	vjustNULL	rot0	check.overlapFALSE	default.units"npc"	nameNULL	gpgpar()	vpNULL
+unitfunctionfunctiongridx	units	dataNULL
+unit.cfunctionfunctiongrid...
+unit.lengthfunctionfunctiongridunit
+unit.pmaxfunctionfunctiongrid...
+unit.pminfunctionfunctiongrid...
+unit.repfunctionfunctiongridx	...
+upViewportfunctionfunctiongridn1	recordingTRUE
+valid.justfunctionfunctiongridjust
+validDetailsfunctionfunctiongridx
+viewportfunctionfunctiongridxunit(0.5, "npc")	yunit(0.5, "npc")	widthunit(1, "npc")	heightunit(1, "npc")	default.units"npc"	just"centre"	gpgpar()	clip"inherit"	xscalec(0, 1)	yscalec(0, 1)	angle0	layoutNULL	layout.pos.rowNULL	layout.pos.colNULL	nameNULL
+viewport.layoutfunctionfunctiongridvp
+viewport.transformfunctionfunctiongridvp
+vpListfunctionfunctiongrid...
+vpPathfunctionfunctiongrid...
+vpStackfunctionfunctiongrid...
+vpTreefunctionfunctiongridparent	children
+widthDetailsfunctionfunctiongridx
+xaxisGrobfunctionfunctiongridatNULL	labelTRUE	mainTRUE	editsNULL	nameNULL	gpgpar()	vpNULL
+xDetailsfunctionfunctiongridx	theta
+xsplineGrobfunctionfunctiongridxc(0, 0.5, 1, 0.5)	yc(0.5, 1, 0.5, 0)	idNULL	id.lengthsNULL	default.units"npc"	shape0	openTRUE	arrowNULL	repEndsTRUE	nameNULL	gpgpar()	vpNULL
+xsplinePointsfunctionfunctiongridx
+yaxisGrobfunctionfunctiongridatNULL	labelTRUE	mainTRUE	editsNULL	nameNULL	gpgpar()	vpNULL
+yDetailsfunctionfunctiongridx	theta

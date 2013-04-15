@@ -1,0 +1,40 @@
+auto_testfunctionfunctiontestthatcode_path	test_path	reporter"summary"	envNULL
+auto_test_packagefunctionfunctiontestthatpath	reporter"summary"
+colourisefunctionfunctiontestthattext	fg"black"	bgNULL
+contextfunctionfunctiontestthatdesc
+equalsfunctionfunctiontestthatexpected	labelNULL	...
+expect_equalfunctionfunctiontestthatobject	expected	...	infoNULL	labelNULL	expected.labelNULL
+expect_equivalentfunctionfunctiontestthatobject	expected	infoNULL	labelNULL	expected.labelNULL
+expect_errorfunctionfunctiontestthatobject	regexpNULL	infoNULL	labelNULL
+expect_falsefunctionfunctiontestthatobject	infoNULL	labelNULL
+expect_identicalfunctionfunctiontestthatobject	expected	infoNULL	labelNULL	expected.labelNULL
+expect_isfunctionfunctiontestthatobject	class	infoNULL	labelNULL
+expect_matchfunctionfunctiontestthatobject	regexp	allTRUE	infoNULL	labelNULL
+expect_messagefunctionfunctiontestthatobject	regexpNULL	infoNULL	labelNULL
+expect_outputfunctionfunctiontestthatobject	regexp	...	infoNULL	labelNULL
+expect_thatfunctionfunctiontestthatobject	condition	infoNULL	labelNULL
+expect_truefunctionfunctiontestthatobject	infoNULL	labelNULL
+expect_warningfunctionfunctiontestthatobject	regexpNULL	infoNULL	labelNULL
+expectationfunctionfunctiontestthatpassed	message
+gives_warningfunctionfunctiontestthatregexpNULL
+is_afunctionfunctiontestthatclass
+is_equivalent_tofunctionfunctiontestthatexpected	labelNULL
+is_falsefunctionfunctiontestthatNO_ARGS
+is_identical_tofunctionfunctiontestthatexpected	labelNULL
+is_truefunctionfunctiontestthatNO_ARGS
+library_if_availablefunctionfunctiontestthatpackage
+make_expectationfunctionfunctiontestthatx	expectation"equals"
+matchesfunctionfunctiontestthatregexp	allTRUE
+MinimalReporterrefObjectGenerator testthatNot a function
+prints_textfunctionfunctiontestthatregexp	...
+shows_messagefunctionfunctiontestthatregexpNULL
+source_dirfunctionfunctiontestthatpath	pattern"\.[rR]$"	envNULL	chdirTRUE
+StopReporterrefObjectGenerator testthatNot a function
+SummaryReporterrefObjectGenerator testthatNot a function
+takes_less_thanfunctionfunctiontestthatamount
+test_dirfunctionfunctiontestthatpath	filterNULL	reporter"summary"	envNULL
+test_filefunctionfunctiontestthatpath	reporter"summary"
+test_packagefunctionfunctiontestthatpackage	filterNULL	reporter"summary"
+test_thatfunctionfunctiontestthatdesc	code
+throws_errorfunctionfunctiontestthatregexpNULL
+watchfunctionfunctiontestthatpath	callback	patternNULL	hashTRUE

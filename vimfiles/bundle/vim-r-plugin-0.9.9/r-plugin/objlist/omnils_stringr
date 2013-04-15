@@ -1,0 +1,26 @@
+fixedfunctionfunctionstringrstring
+ignore.casefunctionfunctionstringrstring
+invert_matchfunctionfunctionstringrloc
+perlfunctionfunctionstringrstring
+str_cfunctionfunctionstringr...	sep""	collapseNULL
+str_countfunctionfunctionstringrstring	pattern
+str_detectfunctionfunctionstringrstring	pattern
+str_dupfunctionfunctionstringrstring	times
+str_extractfunctionfunctionstringrstring	pattern
+str_extract_allfunctionfunctionstringrstring	pattern
+str_joinfunctionfunctionstringr...	sep""	collapseNULL
+str_lengthfunctionfunctionstringrstring
+str_locatefunctionfunctionstringrstring	pattern
+str_locate_allfunctionfunctionstringrstring	pattern
+str_matchfunctionfunctionstringrstring	pattern
+str_match_allfunctionfunctionstringrstring	pattern
+str_padfunctionfunctionstringrstring	width	side"left"	pad" "
+str_replacefunctionfunctionstringrstring	pattern	replacement
+str_replace_allfunctionfunctionstringrstring	pattern	replacement
+str_splitfunctionfunctionstringrstring	pattern	nInf
+str_split_fixedfunctionfunctionstringrstring	pattern	n
+str_subfunctionfunctionstringrstring	end-1L
+str_sub<-functionfunctionstringrstring	end-1L	value
+str_trimfunctionfunctionstringrstring	side"both"
+str_wrapfunctionfunctionstringrstring	width80	indent0	exdent0
+wordfunctionfunctionstringrstring	end	sepfixed(" ")

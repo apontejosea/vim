@@ -1,0 +1,89 @@
+a_plyfunctionfunctionplyr.data	.margins	.funNULL	...	.expandTRUE	.progress"none"	.printFALSE
+aaplyfunctionfunctionplyr.data	.margins	.funNULL	...	.expandTRUE	.progress"none"	.dropTRUE	.parallelFALSE
+adplyfunctionfunctionplyr.data	.margins	.funNULL	...	.expandTRUE	.progress"none"	.parallelFALSE
+alplyfunctionfunctionplyr.data	.margins	.funNULL	...	.expandTRUE	.progress"none"	.parallelFALSE
+amv_dimnamesfunctionfunctionplyrx
+arrangefunctionfunctionplyrdf	...
+as.quotedfunctionfunctionplyrx	envparent.frame()
+baseballdata.framedata.frameplyrNot a function
+baseball$idcharactercharacterplyrNot a function
+baseball$yearintegernumericplyrNot a function
+baseball$stintintegernumericplyrNot a function
+baseball$teamcharactercharacterplyrNot a function
+baseball$lgcharactercharacterplyrNot a function
+baseball$gintegernumericplyrNot a function
+baseball$abintegernumericplyrNot a function
+baseball$rintegernumericplyrNot a function
+baseball$hintegernumericplyrNot a function
+baseball$X2bintegernumericplyrNot a function
+baseball$X3bintegernumericplyrNot a function
+baseball$hrintegernumericplyrNot a function
+baseball$rbiintegernumericplyrNot a function
+baseball$sbintegernumericplyrNot a function
+baseball$csintegernumericplyrNot a function
+baseball$bbintegernumericplyrNot a function
+baseball$sointegernumericplyrNot a function
+baseball$ibbintegernumericplyrNot a function
+baseball$hbpintegernumericplyrNot a function
+baseball$shintegernumericplyrNot a function
+baseball$sfintegernumericplyrNot a function
+baseball$gidpintegernumericplyrNot a function
+catcolwisefunctionfunctionplyr.fun	.tryFALSE
+colwisefunctionfunctionplyr.fun	.cols
+compactfunctionfunctionplyrl
+countfunctionfunctionplyrdf	varsNULL	wt_varNULL
+create_progress_barfunctionfunctionplyrname"none"	...
+d_plyfunctionfunctionplyr.data	.variables	.funNULL	...	.progress"none"	.printFALSE
+daplyfunctionfunctionplyr.data	.variables	.funNULL	...	.progress"none"	.drop_iTRUE	.drop_oTRUE	.parallelFALSE
+ddplyfunctionfunctionplyr.data	.variables	.funNULL	...	.progress"none"	.dropTRUE	.parallelFALSE
+defaultsfunctionfunctionplyrx	y
+descfunctionfunctionplyrx
+dlplyfunctionfunctionplyr.data	.variables	.funNULL	...	.progress"none"	.dropTRUE	.parallelFALSE
+eachfunctionfunctionplyr...
+emptyfunctionfunctionplyrdf
+eval.quotedfunctionfunctionplyrexprs	envirNULL	enclosNULL	tryFALSE
+failwithfunctionfunctionplyrdefaultNULL	f	quietFALSE
+idfunctionfunctionplyr.variables	dropFALSE
+idata.framefunctionfunctionplyrdf
+is.discretefunctionfunctionplyrx
+is.formulafunctionfunctionplyrx
+is.quotedfunctionfunctionplyrx
+isplit2functionfunctionplyrx	f	dropFALSE	...
+joinfunctionfunctionplyrx	y	byintersect(names(x), names(y))	type"left"	match"all"
+join.keysfunctionfunctionplyrx	y	by
+l_plyfunctionfunctionplyr.data	.funNULL	...	.progress"none"	.printFALSE
+laplyfunctionfunctionplyr.data	.funNULL	...	.progress"none"	.dropTRUE	.parallelFALSE
+ldplyfunctionfunctionplyr.data	.funNULL	...	.progress"none"	.parallelFALSE
+liplyfunctionfunctionplyr.iterator	.funNULL	...
+llplyfunctionfunctionplyr.data	.funNULL	...	.progress"none"	.informFALSE	.parallelFALSE
+m_plyfunctionfunctionplyr.data	.funNULL	...	.expandTRUE	.progress"none"
+maplyfunctionfunctionplyr.data	.funNULL	...	.expandTRUE	.progress"none"	.parallelFALSE
+match_dffunctionfunctionplyrx	y	onNULL
+mdplyfunctionfunctionplyr.data	.funNULL	...	.expandTRUE	.progress"none"	.parallelFALSE
+mlplyfunctionfunctionplyr.data	.funNULL	...	.expandTRUE	.progress"none"	.parallelFALSE
+mutatefunctionfunctionplyr.data	...
+numcolwisefunctionfunctionplyr.fun	.tryFALSE
+ozonearraynumericplyrNot a function
+progress_nonefunctionfunctionplyrNO_ARGS
+progress_textfunctionfunctionplyrstyle3	...
+progress_tkfunctionfunctionplyrtitle"plyr progress"	label"Working..."	...
+progress_winfunctionfunctionplyrtitle"plyr progress"	...
+quickdffunctionfunctionplyrlist
+r_plyfunctionfunctionplyr.n	.expr	.progress"none"	.printFALSE
+raplyfunctionfunctionplyr.n	.expr	.progress"none"	.dropTRUE
+rbind.fillfunctionfunctionplyr...
+rbind.fill.matrixfunctionfunctionplyr...
+rdplyfunctionfunctionplyr.n	.expr	.progress"none"
+renamefunctionfunctionplyrx	replace
+rlplyfunctionfunctionplyr.n	.expr	.progress"none"
+round_anyfunctionfunctionplyrx	accuracy	f
+splatfunctionfunctionplyrflat
+split_labelsfunctionfunctionplyrsplits	drop	idplyr::id(splits, drop = TRUE)
+strip_splitsfunctionfunctionplyrdf
+summarisefunctionfunctionplyr.data	...
+summarizefunctionfunctionplyr.data	...
+truefunctionfunctionplyr...
+try_defaultfunctionfunctionplyrexpr	default	quietFALSE
+tryapplyfunctionfunctionplyrlist	fun	...
+unrownamefunctionfunctionplyrx
+vaggregatefunctionfunctionplyr.value	.group	.fun	...	.defaultNULL	.nnlevels(.group)

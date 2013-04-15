@@ -1,0 +1,4 @@
+CalculateOperationTimeFramesfunctionfunctionGGUtilsoperationGroups	operationGroups2
+Graph_BoxPlotfunctionfunctionGGUtilsfields	lines4	fromas.chron("2000-01-01")	xlabNULL	ylabNULL	printXAxisTRUE	printCommentTRUE	data	comments""
+Graph_MultiVarBPlotfunctionfunctionGGUtilsfieldsc("x", "y")	datadata.frame(x = c(3, 2, 1, 4, NA, NA), y = c(4, 5, 6, 7, 8, 9), 	data    c = c("A", "A", "A", "A", "B", "B"))	by"c"	xLab	yLab"value"	dummy.valueNULL	printXAxis	commentsNULL	legend.text.width50	signal.labels
+Graph_PointRangesfunctionfunctionGGUtilsfields	lines4	fromas.chron("2005-01-01")	data

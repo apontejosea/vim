@@ -1,0 +1,101 @@
+as.LCFactorfunctionfunctionDailyDatax
+as.SGFactorfunctionfunctionDailyDatax	excludeMissingTRUE
+as.YearQtrfunctionfunctionDailyDatax	sep"-"
+CalculateDeltafunctionfunctionDailyDataRECQ	Sh9Q
+CalculateFfunctionfunctionDailyDataflow	sh1HGL	sh9HGL
+CalculateFlowPredictionfunctionfunctionDailyDataRondout	Croton	Lines
+CalculateLinesCombinationfunctionfunctionDailyDataflows	threshold50
+CalculateOperationGroupsfunctionfunctionDailyDataDate	LinesOpen
+ChronGridLinesfunctionfunctionDailyDatafromas.chron("2000-01-01")	toas.chron("2010-12-31")
+GetDataByDatesfunctionfunctionDailyDatadates	dataget("tcd", envir = globalenv())	fieldsnames(data)
+GetDataGapsfunctionfunctionDailyDatafieldsc("RECQ", "Sh9Q", "Sh5AQ")	fromas.chron("2010-01-01")	toas.chron(Sys.Date())	N1	dataget("tcd", envir = globalenv())
+GetDataLabelsfunctionfunctionDailyDatax
+GetLabelsWUnitsfunctionfunctionDailyDatafields
+GetLinesOpenfunctionfunctionDailyDataRECQ
+GetModesDatafunctionfunctionDailyDatadateVec	modes
+GetOGTablefunctionfunctionDailyDataDate	LinesOpen
+GetReportLabelsfunctionfunctionDailyDatafields
+GetUnitsfunctionfunctionDailyDatafields
+Graph_BoxPlotsByOGfunctionfunctionDailyDatalines6	data	fromas.chron("2000-01-01")	toas.chron("2010-12-31")	dummy.valuesc(NA, NA, -15, 800)
+Graph_DeliveryFullRangefunctionfunctionDailyDatadataget("tcd", envir = globalenv())	HRPSDataReadHRPS()
+Graph_DeltaHGLVsRECQByLinesAndModesfunctionfunctionDailyDatadata	fromas.chron("2000-01-01")	toas.chron(Sys.time())
+Graph_DeviationTrendByLCfunctionfunctionDailyDatafield"RECDev"	fromas.chron("1980-01-01")	toas.chron(Sys.Date())	mainNULL	dataget("tcd", envir = globalenv())
+Graph_FlowVsDeltafunctionfunctionDailyDatadataget("tcd", envir = globalenv())
+Graph_FlowVsDeltaByLinesAndSignalfunctionfunctionDailyDatadata
+Graph_FlowVsDevByLinesAndSignalfunctionfunctionDailyDatadata
+Graph_FrictionFactorsfunctionfunctionDailyDatadata	Lines4
+Graph_GeneralFlowTrendsfunctionfunctionDailyDatafromYearLag(as.chron(as.Date(Sys.time())), -yrs)	toas.chron(as.Date(Sys.time()))	yrs10	dataget("tcd", envir = globalenv())	sgModesget("sgModes", envir = globalenv())	printFALSE	rpRangeas.chron(c("2010-09-01", "2011-05-31"))
+Graph_HGLAndFlowTrendsfunctionfunctionDailyDatadataget("tcd", envir = globalenv())
+Graph_HGLRangesfunctionfunctionDailyDatadata
+Graph_HistoricalfunctionfunctionDailyDatafieldsc("RECQ")	fromas.chron("1985-12-31")	toas.endOfYear(as.chron(Sys.Date()))	dataget("tcd", envir = globalenv())	lines4
+Graph_LinearTrendfunctionfunctionDailyDatafield"Delta"	groupBy"Lines"	fromas.chron("2004-01-01")	toas.endOfYear(as.chron(Sys.Date()))	dataget("tcd", envir = globalenv())	ylabNULL	ylimc(-10, 10)	displayEqnFALSE	main
+Graph_LoessTrendByLCfunctionfunctionDailyDatafield"RECDev"	fromas.chron("1980-01-01")	toas.chron(Sys.Date())	mainNULL	data
+Graph_ParallelTrendsfunctionfunctionDailyDatafieldsc("DrivingHead", "Rondout", "Delta", "RECDev", "Sh9Dev")	data	cut.off.dateas.chron("2012-01-01")	fit.years5
+MergeHGLfunctionfunctionDailyDatatcd	hglData
+panel.historicalfunctionfunctionDailyDatax	y	OperationGroups	subscripts	...
+ProcessTCDfunctionfunctionDailyDatadata.dir"data/DailyData"	output.dir"lib/src/packages/DailyData/data"	calcOG
+quarterlyAvgTCDfunctionfunctionDailyDatadata
+quarterlySDTCDfunctionfunctionDailyDatadata
+ReadHGLfunctionfunctionDailyDatafile"data/DailyData/HGLData.csv"
+ReadHourlyCSVfunctionfunctionDailyDatafile	dateColsc(1)
+ReadHRPSfunctionfunctionDailyDataNO_ARGS
+ReadModesChangesfunctionfunctionDailyDatafile"data/DailyData/SluiceGateModeChanges.csv"
+ReadTCDfunctionfunctionDailyDatafile"data/DailyData/tcd.csv"
+sgModesdata.framedata.frameDailyDataNot a function
+sgModes$ModefactorfactorDailyDataNot a function
+sgModes$fromdatesnumericDailyDataNot a function
+sgModes$todatesnumericDailyDataNot a function
+sgModes$CommentscharactercharacterDailyDataNot a function
+t.medianminmaxfunctionfunctionDailyDatafields	by	data
+Table_HistoricalSummaryfunctionfunctionDailyDatadata	fromas.chron("2010-01-01")	toas.chron("2010-08-31")	fieldsc("RECQ", "Sh9Q", "Sh5AQ")	lines4	rnd4	paired.dataTRUE
+Table_LineWiseQuarterlySummaryfunctionfunctionDailyDatafromas.chron("2000-01-01")	toas.chron(Sys.Date())	field"RECQ"	use.row.namesFALSE	rnd1	linesc(1, 2, 3, 4, 6)	data
+Table_LineWiseYearlySummaryfunctionfunctionDailyDatafromas.chron("2000-01-01")	toas.chron(Sys.Date())	field"RECQ"	use.row.namesFALSE	rnd1	linesc(1, 2, 3, 4, 6)	data
+Table_NYearSummaryfunctionfunctionDailyDatafrom	y1	fieldsc("RECQ", "Sh9Q")	lines4	dataget("tcd", envir = globalenv())	paired.dataTRUE	FUN	rnd1	use.row.namesFALSE
+Table_OGSummaryfunctionfunctionDailyDatafieldsc("RECQ", "Sh9Q", "Rondout", "WestBranch", "Sh5AQ", "Delta", 	fields    "DrivingHead")	fromas.chron("2000-01-01")	toas.chron("2011-12-31")	linesc(6)	dataget("tcd", envir = globalenv())	rnd1
+Table_QtrSummaryfunctionfunctionDailyDatafieldsc("RECQ", "Sh9Q")	labelsGetReportLabels(fields)	fromas.chron("2009-01-01")	toas.chron("2009-12-31")	lines4	data	paired.dataTRUE	FUN	rnd1	use.row.namesFALSE
+Table_SummaryfunctionfunctionDailyDatafields"RECQ"	fromas.chron("2009-01-01")	toas.chron(Sys.Date())	linesc(3, 4, 6)	byc("OperationGroups", "Lines")	data
+Table_YearSummaryfunctionfunctionDailyDatafieldsc("RECQ", "Sh9Q")	labels""	fromas.chron("2009-01-01")	toas.chron("2009-12-31")	lines4	data	paired.dataTRUE	FUN	rnd1	use.row.namesFALSE
+tcddata.framedata.frameDailyDataNot a function
+tcd$DatesdatesnumericDailyDataNot a function
+tcd$OutlierslogicallogicalDailyDataNot a function
+tcd$RECQnumericnumericDailyDataNot a function
+tcd$Sh9QnumericnumericDailyDataNot a function
+tcd$Sh5AQnumericnumericDailyDataNot a function
+tcd$DeltanumericnumericDailyDataNot a function
+tcd$RondoutnumericnumericDailyDataNot a function
+tcd$WestBranchnumericnumericDailyDataNot a function
+tcd$E1numericnumericDailyDataNot a function
+tcd$W1numericnumericDailyDataNot a function
+tcd$E2numericnumericDailyDataNot a function
+tcd$W2numericnumericDailyDataNot a function
+tcd$E3numericnumericDailyDataNot a function
+tcd$W3numericnumericDailyDataNot a function
+tcd$YearQtrcharactercharacterDailyDataNot a function
+tcd$LinesnumericnumericDailyDataNot a function
+tcd$OperationGroupsdatesnumericDailyDataNot a function
+tcd$OperationGroups2datesnumericDailyDataNot a function
+tcd$LineCombinationcharactercharacterDailyDataNot a function
+tcd$PredictionnumericnumericDailyDataNot a function
+tcd$RECDevnumericnumericDailyDataNot a function
+tcd$RECPDevnumericnumericDailyDataNot a function
+tcd$Sh9DevnumericnumericDailyDataNot a function
+tcd$Sh9PDevnumericnumericDailyDataNot a function
+tcd$RECPDeltanumericnumericDailyDataNot a function
+tcd$Sh9PDeltanumericnumericDailyDataNot a function
+tcd$DrivingHeadnumericnumericDailyDataNot a function
+tcd$ModescharactercharacterDailyDataNot a function
+tcd$Sh1HGLnumericnumericDailyDataNot a function
+tcd$Sh2AHGLnumericnumericDailyDataNot a function
+tcd$Sh5AHGLnumericnumericDailyDataNot a function
+tcd$Sh6HGLnumericnumericDailyDataNot a function
+tcd$Sh8HGLnumericnumericDailyDataNot a function
+tcd$Sh9HGLnumericnumericDailyDataNot a function
+tcd$DeltaHGLnumericnumericDailyDataNot a function
+tcd$fRECnumericnumericDailyDataNot a function
+tcd$fSh9numericnumericDailyDataNot a function
+tcd$DQ.RECQcharactercharacterDailyDataNot a function
+tcd$YearorderedfactorDailyDataNot a function
+UpdateHGLfunctionfunctionDailyDatatcd	hglData
+UpdateLinesOpenfunctionfunctionDailyDataLines	RECQ
+WordTablefunctionfunctionDailyDatax	na"-"	nsmall1	labelsGetReportLabels(colnames(x))
+WriteDailyCSVfunctionfunctionDailyDatadata	file

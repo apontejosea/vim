@@ -1,0 +1,18 @@
+CloseAllDevicesfunctionfunctionUtilityNO_ARGS
+CreateEmptyDataFramefunctionfunctionUtilityrowsNULL	colsNULL
+DFClassesfunctionfunctionUtilityx
+FilterRowsWithNAfunctionfunctionUtilitydf	colsnames(df)	return.indexFALSE
+GetFileNameDatefunctionfunctionUtilitychronDate
+LatticeStackfunctionfunctionUtilitylGraphslist(xyplot(1 ~ 1), xyplot(1 ~ 1), xyplot(1 ~ 1))	leftPaddingrep(0, length(lGraphs))	rightPaddingrep(0, length(lGraphs))	heightsunit(1/length(lGraphs), c("npc"))	showGraphsTRUE
+MaxfunctionfunctionUtilityx	...
+MinfunctionfunctionUtilityx	...
+PastefunctionfunctionUtility...	sep""
+PdfItfunctionfunctionUtilitymyGraph	filepaste("Output_", TimeStamp(), ".pdf", sep = "")	multiplier1	width11	height8.5	onefileTRUE
+PngItfunctionfunctionUtilitymyGraph	filepaste("Output_", TimeStamp(), ".png", sep = "")	multiplier1	width11 * multiplier	height8.5 * multiplier	res200	verboseTRUE
+ReadDailyCSVfunctionfunctionUtilityfile	dateFormat"chron"
+repDFfunctionfunctionUtilitydf	n
+ResizeDFfunctionfunctionUtilitydf	fromdates(as.chron(min(df[, 1])))	toas.chron(Sys.Date())
+RoundDFfunctionfunctionUtilitydf	rnd4
+StackfunctionfunctionUtilityx	select	carryoverNULL	...
+TimeStampfunctionfunctionUtilityNO_ARGS
+UnstackfunctionfunctionUtilityx	model	carryoverNULL

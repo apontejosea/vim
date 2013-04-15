@@ -1,0 +1,21 @@
+as.chronfunctionfunctionchronx	...
+chronfunctionfunctionchrondates.NULL	times.NULL	formatc(dates = "m/d/y", times = "h:m:s")	out.format	origin.
+chron_transfunctionfunctionchronformat"%Y-%m-%d"	n5
+datesfunctionfunctionchronx	...
+day.of.weekfunctionfunctionchronmonth	day	year
+daysfunctionfunctionchronx
+hoursfunctionfunctionchronx
+is.chronfunctionfunctionchronx
+is.holidayfunctionfunctionchronx	holidays
+is.weekendfunctionfunctionchronx
+leap.yearfunctionfunctionchrony
+minutesfunctionfunctionchronx
+month.day.yearfunctionfunctionchronjul	origin.
+scale_x_chronfunctionfunctionchron...	format"%Y-%m-%d"	n5
+scale_y_chronfunctionfunctionchron...	format"%Y-%m-%d"	n5
+secondsfunctionfunctionchronx
+seq.datesfunctionfunctionchronfrom	to	by"days"	length.	...
+timesfunctionfunctionchronx	...
+year.expandfunctionfunctionchrony	cut.off30	centuryc(1900, 2000)	...
+year.strictfunctionfunctionchron...
+yearsfunctionfunctionchronx

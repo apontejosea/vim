@@ -1,0 +1,2 @@
+Graph_HistoricalTrendsfunctionfunctionGridUtilsdata	fromas.chron("1982-01-01")	toas.chron("2011-12-31")
+Graph_PairedLineComparisonfunctionfunctionGridUtilsdataget("tcd", envir = globalenv())	fromas.chron("1982-01-01")	toas.chron("2011-12-31")	lines3

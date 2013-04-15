@@ -1,0 +1,7 @@
+    p   <- ggplot()
+    p   <- p + geom_point(data=data[fit.filter, ], aes(x=as.Date(Dates), y=Delta))
+    p   <- p + geom_line(data=pred.data, aes(x=as.Date(Dates), y=p99.upr), color='blue')
+    p   <- p + geom_line(data=pred.data, aes(x=as.Date(Dates), y=p99.fit), color='black')
+    p   <- p + geom_line(data=pred.data, aes(x=as.Date(Dates), y=p99.lwr), color='blue')
+    p   <- p + xlab('') + ylim(-25, 25)
+    p   <- p + geom_point(data=data[pred.filter,], aes(x=as.Date(Dates), y=Delta), color='red')

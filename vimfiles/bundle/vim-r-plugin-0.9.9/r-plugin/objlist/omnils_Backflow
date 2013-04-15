@@ -1,0 +1,57 @@
+BFDatadata.framedata.frameBackflowNot a function
+BFData$DateTimeunknown BackflowNot a function
+BFData$Flowunknown BackflowNot a function
+BFData$ElapsedHoursunknown BackflowNot a function
+BFData$EventIDunknown BackflowNot a function
+bfParamsdata.framedata.frameBackflowNot a function
+bfParams$EventIDcharactercharacterBackflowNot a function
+bfParams$alphanumericnumericBackflowNot a function
+bfParams$betanumericnumericBackflowNot a function
+bfParams$chinumericnumericBackflowNot a function
+bfParams$deltanumericnumericBackflowNot a function
+bfParams$epsilonnumericnumericBackflowNot a function
+bfParams$TMRLeakagenumericnumericBackflowNot a function
+bfParams$BFDataAvailablelogicallogicalBackflowNot a function
+bfParams$ValidEventlogicallogicalBackflowNot a function
+bfParams$WorkingSetlogicallogicalBackflowNot a function
+bfParams$ReachedConvergencelogicallogicalBackflowNot a function
+bfParams$MethodcharactercharacterBackflowNot a function
+bfParams$RECValvesSeatedlogicallogicalBackflowNot a function
+bfParams$Sh5AOnlogicallogicalBackflowNot a function
+bfParams$Sh5ADiscerniblelogicallogicalBackflowNot a function
+bfParams$Sh5ARCAvailablelogicallogicalBackflowNot a function
+dataRangesdata.framedata.frameBackflowNot a function
+dataRanges$eventIDnumericnumericBackflowNot a function
+dataRanges$typecharactercharacterBackflowNot a function
+dataRanges$fromnumericnumericBackflowNot a function
+dataRanges$tonumericnumericBackflowNot a function
+EventID2ChronCharfunctionfunctionBackfloweventID
+EventID2DateCharfunctionfunctionBackfloweventID
+ExtractDataRangesfunctionfunctionBackflowdata	eventIDNULL	typeunique(data$type)
+ExtractSfunctionfunctionBackfloweventID"20090402"	bfParamsget("bfParams", envir = globalenv())
+ExtractSingleEventfunctionfunctionBackfloweventID"20100113"	dataget("BFData", envir = globalenv())
+Graph_BackflowConvergenceTimefunctionfunctionBackflowNO_ARGS
+Graph_BackflowResidualsfunctionfunctionBackflowparamsget("bfParams", envir = globalenv())	IDListwith(params, EventID[ValidEvent == T])	dataget("BFData", envir = parent.frame())
+Graph_BackflowResultsfunctionfunctionBackflowIDListwith(ReadBFParameters(), EventID[ValidEvent == T])	dataget("BFData", envir = globalenv())	paramsget("bfParams", envir = globalenv())
+Graph_OnOffRangesfunctionfunctionBackflowIDListwith(ReadBFParameters(), EventID[ValidEvent == T])	dataget("BFData", envir = globalenv())
+ObjectivefunctionfunctionBackflowS	bfd
+PlotAllfunctionfunctionBackfloweventID"20100113"	SExtractS(eventID)	dataExtractSingleEvent(eventID)
+PlotDataVsModelfunctionfunctionBackflowbfd	S	eventID
+PlotLeakageEstimatefunctionfunctionBackfloweventID"20030116"	dataget("BFData", envir = globalenv())	paramsget("bfParams", envir = globalenv())
+PlotResidualsfunctionfunctionBackflowS	eventID	dataget("BFData", envir = globalenv())
+PlotShaft5AStagesfunctionfunctionBackfloweventID"20100603"	singleBFDataExtractSingleEvent("20100603")	dataRanges
+ProcessBackflowDatafunctionfunctionBackflowdata.dir"data/BFTData"	output.dir"lib/src/packages/Backflow/data"
+QModelfunctionfunctionBackflowx	S
+RangeAveragefunctionfunctionBackfloweventID"20060525"	rangeName"Sh5AOff"	data
+ReadBFDatafunctionfunctionBackflowdata.dir"data/Backflow/csv"	minHours0	maxHours30	verboseFALSE
+ReadBFDataRangesfunctionfunctionBackflowfile"data/BFTData/csv/dataRanges.csv"
+ReadBFParametersfunctionfunctionBackflowfile"data/Backflow/csv/BFTParameters.csv"	eventIDNULL
+ReadTMRLeakagefunctionfunctionBackfloweventIDNULL	bfParamsget("bfParams", envir = globalenv())
+RunNLMFitfunctionfunctionBackfloweventID"20100113"	S0ExtractS(eventID)	dataget("BFData", envir = globalenv())	stepmax10	dataRanges
+Sh5AEffectSummaryfunctionfunctionBackfloweventIDListc("20060525", "20071120", "20071204", "20071211", "20090402", 	eventIDList    "20100603")
+Sh5AMethodDiscrepancyfunctionfunctionBackflowNO_ARGS
+Table_UncertaintySummaryfunctionfunctionBackfloweventID"20100113"	paramsbfParams[bfParams$EventID == eventID, ]
+Uncertainty_ModelfunctionfunctionBackflowNO_ARGS
+Uncertainty_RECfunctionfunctionBackflowrecValvesSeatedFALSE
+Uncertainty_Shaft5AfunctionfunctionBackflowSh5AOnNA	IntermittentNA	RCAvailableNA	DatesNULL	Sh5AQ4
+Uncertainty_Shaft9functionfunctionBackflowSh9Q	method"AVG"
