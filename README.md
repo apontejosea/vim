@@ -16,5 +16,11 @@ This is my attempt to sync vim configuration files accross computers.
 Installing on Windows
 =====================
 
-1. cd %USERPROFILE%/vim
-2. 
+Assuming vim is installed in 'c:/Program Files/Vim'
+
+1. mkdir %USERPROFILE%\vim
+2. mkdir %USERPROFILE%\vim\vimfiles
+3. Move whatever is inside the vimfiles original directory (Program Files) to the vimfiles directory just created.
+4. Move the _vimerc file from Program Files to %USERPROFILE%\vim
+5. cd 'c:/Program Files/Vim'
+6. mklink _vimrc %USERPROFILE%\vim\_vimrc
