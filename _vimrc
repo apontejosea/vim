@@ -1,52 +1,61 @@
-"===============================================================================
-" Pathogen
-"===============================================================================
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+
+if has('win32') || has('win64')
+  set rtp+=~/vim/vimfiles/bundle/vundle/
+  call vundle#rc('$HOME/vim/vimfiles/bundle/')
+else
+  " Usual quickstart instructions
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+endif
+
+" let Vundle manage Vundle
+" required! 
+" Bundle 'gmarik/vundle'
+" 
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+"  Bundle 'Lokaltog/vim-easymotion'
+"  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"  Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+" " ...
+
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
+
+
+" call pathogen#infect()
+" call pathogen#helptags()
 
 "===============================================================================
-" relocating swap files
 "===============================================================================
-set backupdir=C:\workspace\vim
+set backupdir=C:/workspace/temp
 
-"===============================================================================
-" complete file path while typing
-"===============================================================================
-set wildmode=longest,list,full
-set wildmenu
 
-"===============================================================================
-" ...so that fugitive works
-"===============================================================================
-set directory+=,~/tmp,$TMP
-
-"===============================================================================
-" move chunks up/down
-"===============================================================================
-let @a = 'V}d}p'
-nnoremap <A-J> @a
-let @w = 'V}d{{p'
-nnoremap <A-K> @w
 
 "===============================================================================
 " Autocompletion
 "===============================================================================
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-
-"===============================================================================
-" Enable the installation of vimballs (vba files)
-"===============================================================================
-" call vimball#Vimball("%:p:h")
-
-"===============================================================================
-" Code Folding
-"===============================================================================
-augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
-
 
 
 "===============================================================================
@@ -126,43 +135,18 @@ inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
 
-
-"===============================================================================
-" colorscheme
-"===============================================================================
-syntax enable
-set background=dark
-colorscheme solarized
-
-"colorscheme xoria256 
-"colorscheme inkpot
-call togglebg#map("<F6>")
-
+colorscheme xoria256
 
 let mapleader = ","
 
-"===============================================================================
-" show row numbers
-"===============================================================================
-:set number
-
-
-
-"===============================================================================
-" VimOutliner
-"===============================================================================
+"==============================================================================
+"  VimOutliner
+"==============================================================================
 filetype plugin indent on
 syntax on
 runtime! ftdetect\*.vim
-
-
-
-"===============================================================================
-" Swap words
-"===============================================================================
-:nnoremap <silent> gw "_yiw:s/\(\%#\w\+\)\(\W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
-" This version will work across newlines:
-:nnoremap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
+au BufEnter *.otl setlocal tabstop = 2
+au BufEnter *.otl setlocal shiftwidth = 2
 
 
 
@@ -174,16 +158,15 @@ runtime! ftdetect\*.vim
 :nnoremap <F5> "=strftime("%m/%d/%y")<CR>P
 :inoremap <F5> <C-R>=strftime("%m/%d/%y")<CR>
 
-:inoremap <A-3> #' 
-:nnoremap <A-3> i#' <Esc>
+
 
 "===============================================================================
-" auto wraping text
+" auto wraping teext
 "===============================================================================
 set formatoptions-=tcqro
 
 " http://www.derekwyatt.org/vim/the-vimrc-file/
-set textwidth=70
+set textwidth=80
 
 
 " Increase history of executed commands (:).
@@ -216,43 +199,4 @@ function MyDiff()
     let cmd = $VIMRUNTIME . '\diff'
   endif
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
-endfunction
-
-
-function! VO2MD()
-  let lines = []
-  let was_body = 0
-  for line in getline(1,'$')
-    if line =~ '^\t*[^:\t]'
-      let indent_level = len(matchstr(line, '^\t*'))
-      if was_body " <= remove this line to have body lines separated
-        call add(lines, '')
-      endif " <= remove this line to have body lines separated
-      call add(lines, substitute(line, '^\(\t*\)\([^:\t].*\)', '\=repeat("#", indent_level + 1)." ".submatch(2)', ''))
-      call add(lines, '')
-      let was_body = 0
-    else
-      call add(lines, substitute(line, '^\t*: ', '', ''))
-      let was_body = 1
-    endif
-  endfor
-  silent %d _
-  call setline(1, lines)
-endfunction
-
-function! MD2VO()
-  let lines = []
-  for line in getline(1,'$')
-    if line =~ '^\s*$'
-      continue
-    endif
-    if line =~ '^#\+'
-      let indent_level = len(matchstr(line, '^#\+')) - 1
-      call add(lines, substitute(line, '^#\(#*\) ', repeat("\<Tab>", indent_level), ''))
-    else
-      call add(lines, substitute(line, '^', repeat("\<Tab>", indent_level) . ': ', ''))
-    endif
-  endfor
-  silent %d _
-  call setline(1, lines)
 endfunction
