@@ -12,3 +12,9 @@ In my local computer the story is different.  I can do whatever I want
 as an admin there, so it's easier to create links and mappings.
 
 This is my attempt to sync vim configuration files accross computers.
+
+Installing on Windows
+=====================
+
+1. cd %USERPROFILE%/vim
+2. 
