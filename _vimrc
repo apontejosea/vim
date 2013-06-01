@@ -11,6 +11,8 @@ else
   call vundle#rc()
 endif
 
+
+
 " let Vundle manage Vundle
 " required! 
 " Bundle 'gmarik/vundle'
@@ -22,6 +24,9 @@ Bundle 'scrooloose/nerdtree.git'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-ruby/vim-ruby'
+
 "  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "  Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -137,7 +142,20 @@ inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
 
-colorscheme xoria256
+
+"===============================================================================
+" solarized colo scheme
+"===============================================================================
+syntax enable
+set background=dark
+colorscheme solarized
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+call togglebg#map("<F6>")
+
 
 let mapleader = ","
 
