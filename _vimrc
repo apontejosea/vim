@@ -18,8 +18,10 @@ endif
 " My Bundles here:
 "
 " original repos on github
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive'
-"  Bundle 'Lokaltog/vim-easymotion'
 "  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "  Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
