@@ -11,8 +11,6 @@ else
   call vundle#rc()
 endif
 
-
-
 " let Vundle manage Vundle
 " required! 
 " Bundle 'gmarik/vundle'
@@ -48,7 +46,6 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 
 
-
 " call pathogen#infect()
 " call pathogen#helptags()
 
@@ -56,6 +53,7 @@ filetype plugin indent on     " required!
 "===============================================================================
 set backupdir=C:/workspace/temp
 
+:let $MYVIMRC = '$USERPROFILE\vim\_vimrc'
 
 
 "===============================================================================
