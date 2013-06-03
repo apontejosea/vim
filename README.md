@@ -1,20 +1,17 @@
-vim
+Vim
 ===
 
-This vim solution is used accross multiple machines.    I'm not allowed to create links to any file in program files, so I currently
-don't have a way to sync in github in my work computer, as I don't
-have admin privileges to this directory consistently (company policy).
-So I'm working around this issue by having a shortcut in the program
-files vim directory to a git repository folder in my user path.  Here
-is where I have the actual git folder. 
+This vim solution is used accross multiple Windows 7 machines.  
+It requires the creation of symbolic links in the command line, 
+for which admin privileges are required.  If the command line 
+doesn't allow for the creation of links in the Program Files 
+directory, try by running the command prompt as administrator
+((1) Right-click on the command prompt on the start menu and 
+(2) click "Run as Administrator").
 
-In my local computer the story is different.  I can do whatever I want
-as an admin there, so it's easier to create links and mappings.
 
-This is my attempt to sync vim configuration files accross computers.
-
-Installing on Windows
-=====================
+Installation
+============
 
 Assuming vim is installed in 'c:/Program Files/Vim'
 
@@ -24,4 +21,4 @@ Assuming vim is installed in 'c:/Program Files/Vim'
 4. Move the _vimerc file from Program Files to %USERPROFILE%\vim
 5. cd 'c:/Program Files/Vim'
 6. mklink _vimrc %USERPROFILE%\vim\\_vimrc
-7. open gvim and run :BundleInstall!
+7. open gvim and run :BundleInstall! (you will probably have to remove existing plugins before in order to make space for the downloaded plugin repositories)
