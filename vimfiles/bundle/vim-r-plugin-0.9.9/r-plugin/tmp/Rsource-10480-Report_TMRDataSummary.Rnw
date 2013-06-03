@@ -1,9 +1,0 @@
-  print(xtable(DailyData::Table_LineWiseYearlySummary(data=tcd, from=as.chron('2000-01-01'), to=rp.to , field='fSh9', rnd=4, lines = c(2,3,4,6)),
-               caption="Historical Annual Trend of Shaft 9 flow-based 'f' Factor",
-               label='tabYrFFactorSh9',
-               digits=4),
-        include.rownames=FALSE,
-        floating=TRUE,
-        floating.environment='table',
-        table.placement='htbp',
-        caption.placement='top')

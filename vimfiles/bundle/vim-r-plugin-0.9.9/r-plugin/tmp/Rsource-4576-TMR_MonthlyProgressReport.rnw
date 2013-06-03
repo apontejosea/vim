@@ -1,5 +1,0 @@
-  myFilter  <-  with(hts, 
-                     DateTime >= as.chron('2010-01-01') & 
-                     DateTime <= as.chron('2012-12-31'))
-  hts$DQ.Rondout    <-  rep('OK', nrow(hts))
-  hts$DQ.WestBranch <-  rep('OK', nrow(hts))

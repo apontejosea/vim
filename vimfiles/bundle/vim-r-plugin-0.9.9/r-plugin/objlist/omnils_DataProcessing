@@ -1,4 +1,0 @@
-CollectRECQDatafunctionfunctionDataProcessingdefault.folder"G:/Project/3409025/Tunnel Monitoring/Tunnel Monitoring Reporting/Tunnel Monitoring Data/2. Raw Data/Raw Flow REC/*"
-CollectSh9QDatafunctionfunctionDataProcessingfolder"G:/Project/3409025/Tunnel Monitoring/Tunnel Monitoring Reporting/Tunnel Monitoring Data/2. Raw Data/Raw Flow Shaft 9/Splitted Downloads"
-ExtractReservoirDatafunctionfunctionDataProcessingfolderchoose.dir(default = "G:/project/2320006/WATERRPT/2012")	out.dirgetwd()
-ProcessDailyDatafunctionfunctionDataProcessingfolder"Data/TMRInputData"	calcOG	output"code/Libraries/DailyData/data/tcd.rda"

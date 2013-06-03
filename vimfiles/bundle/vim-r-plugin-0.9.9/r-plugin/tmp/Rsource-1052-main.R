@@ -1,5 +1,0 @@
-param     <-  trellis.par.get('superpose.symbol')
-param$col <-  c('gray', 'red')
-param$pch <- c(1,19)
-param$cex <- c(1,1)
-trellis.par.set('superpose.symbol', param)
