@@ -21,6 +21,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'https://maxmeyer/vim-taskjuggler.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
