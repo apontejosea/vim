@@ -180,7 +180,7 @@ else
     set background=dark
 endif
 call togglebg#map("<F6>")
-
+let g:solarized_italic=0    "default value is 1
 
 let mapleader = ","
 
