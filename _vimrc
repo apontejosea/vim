@@ -62,6 +62,8 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 
+:imap jk <Esc>
+
 "=========================================================================
 " move chunks up/down
 " this is not working as expected
