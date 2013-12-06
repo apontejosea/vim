@@ -21,7 +21,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'https://maxmeyer/vim-taskjuggler.git'
+Bundle 'maxmeyer/vim-taskjuggler.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
@@ -29,7 +29,6 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Vim-R-plugin'
-
 "  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "  Bundle 'tpope/vim-rails.git'
 "  vim-scripts repos
@@ -38,6 +37,12 @@ Bundle 'FuzzyFinder'
 "  non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " " ...
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "SirVer/ultisnips.git"
+Bundle "honza/vim-snippets"
+
 
 filetype plugin indent on     " required!
 "
@@ -64,6 +69,7 @@ set ofu=syntaxcomplete#Complete
 
 
 :imap jk <Esc>
+:imap JK <Esc>
 
 "=========================================================================
 " move chunks up/down
@@ -114,9 +120,7 @@ function! MoveLeft()
 endfunction
 inoremap ( ()<C-R>=MoveLeft()<CR>
 
-
 let $MYVIMRC = '$USERPROFILE\vim\_vimrc'
-
 
 "===============================================================================
 " Tab characters
@@ -130,6 +134,7 @@ nnoremap <S-Tab> <<_
 inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+
 
 "===============================================================================
 " navigate buffers
@@ -168,7 +173,6 @@ inoremap <A-j> <Esc>:m+<CR>==gi
 inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
-
 
 "===============================================================================
 " solarized colo scheme
@@ -233,17 +237,27 @@ augroup vimrc
   au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 augroup END
 
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
 
 
 
 
-"=========================================================================
-" auto wraping teext
-"=========================================================================
-set formatoptions-=tcqro
 
-" http://www.derekwyatt.org/vim/the-vimrc-file/
-set textwidth=80
+" "=========================================================================
+" " auto wraping text
+" "=========================================================================
+" set formatoptions-=tcqro
+" 
+" " http://www.derekwyatt.org/vim/the-vimrc-file/
+" set textwidth=120
+" 
+autocmd BufEnter *.R textwidth=80
+augroup vimrc_autocmds
+  autocmd BufEnter *.R textwidth=120
+augroup END
+
+
 
 
 " Increase history of executed commands (:).
@@ -283,8 +297,6 @@ endfunction
 " Enable the installation of vimballs (vba files)
 "===============================================================================
 " call vimball#Vimball("%:p:h")
-
-
 
 function! VO2MD()
   let lines = []
