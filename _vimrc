@@ -80,6 +80,13 @@ nnoremap <A-J> @a
 let @w = 'V}d{{p'
 nnoremap <A-K> @w
 
+nnoremap <A->> zr
+nnoremap <A-lt> zm
+
+nnoremap <A-p> gq}g;<C-O>
+
+
+
 "===============================================================================
 " ...so that fugitive works
 "===============================================================================
@@ -174,16 +181,23 @@ inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
 
-"===============================================================================
-" solarized colo scheme
-"===============================================================================
+
+"===========================================================================
+" Navigating tabs
+"===========================================================================
+:nnoremap <F7> :tabp<CR>
+:nnoremap <F8> :tabn<CR>
+ 
+"===========================================================================
+" solarized color scheme
+"===========================================================================
 syntax enable
 set background=light
 colorscheme solarized
 if has('gui_running')
-    set background=light
+  set background=light
 else
-    set background=dark
+  set background=dark
 endif
 call togglebg#map("<F6>")
 let g:solarized_italic=0    "default value is 1
@@ -207,6 +221,12 @@ au BufEnter *.otl setlocal shiftwidth = 2
 
 
 
+"==============================================================================
+"  Indentation
+"==============================================================================
+set autoindent
+
+
 "===============================================================================
 " Macro for date insertion
 "===============================================================================
@@ -219,7 +239,6 @@ au BufEnter *.otl setlocal shiftwidth = 2
 :nnoremap <A-3> i#' <Esc>
 
 
-
 "===============================================================================
 " Swap words
 "===============================================================================
@@ -228,36 +247,35 @@ au BufEnter *.otl setlocal shiftwidth = 2
 :nnoremap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
 
 
-
 "===============================================================================
 " Code Folding
 "===============================================================================
+autocmd FileType R 
+      \ set foldmethod=expr | 
+      \ set foldexpr=getline(v:lnum)=~'^\\s*#\'''
+
 augroup vimrc
   au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+"  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 augroup END
 
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
 
-
-
-
 " "=========================================================================
 " " auto wraping text
 " "=========================================================================
 " set formatoptions-=tcqro
+"
 " 
 " " http://www.derekwyatt.org/vim/the-vimrc-file/
 " set textwidth=120
 " 
-autocmd BufEnter *.R textwidth=80
 augroup vimrc_autocmds
-  autocmd BufEnter *.R textwidth=120
+  autocmd BufEnter * set textwidth=70
+  autocmd BufEnter *.R set textwidth=140
 augroup END
-
-
 
 
 " Increase history of executed commands (:).
