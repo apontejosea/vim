@@ -21,4 +21,6 @@ Assuming vim is installed in 'c:/Program Files/Vim'
 4. Move the _vimerc file from Program Files to %USERPROFILE%\vim
 5. cd 'c:/Program Files/Vim'
 6. mklink _vimrc %USERPROFILE%\vim\\_vimrc
+7. git clone https://github.com/gmarik/Vundle.vim.git C:/vim/bundle/Vundle
 7. open gvim and run :BundleInstall! (you will probably have to remove existing plugins before in order to make space for the downloaded plugin repositories)
+
