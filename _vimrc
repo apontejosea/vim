@@ -60,13 +60,19 @@ filetype plugin indent on     " required!
 " relocating swap files
 "=========================================================================
 set backupdir=$USERPROFILE/vim/temp
+set dir=$USERPROFILE/vim/temp
+
+"=========================================================================
+" ...so that fugitive works
+"=========================================================================
+set directory+=,~/tmp,$TMP
+
 
 "=========================================================================
 " Autocompletion
 "=========================================================================
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-
 
 :imap jk <Esc>
 :imap JK <Esc>
@@ -84,14 +90,6 @@ nnoremap <A->> zr
 nnoremap <A-lt> zm
 
 nnoremap <A-p> gq}g;<C-O>
-
-
-
-"===============================================================================
-" ...so that fugitive works
-"===============================================================================
-set directory+=,~/tmp,$TMP
-
 
 "=========================================================================
 " complete file path while typing
