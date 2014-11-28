@@ -1,26 +1,21 @@
+set ff=dos
+
 "========================================================================
 " Vundle
 "=======================================================================
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-
-
 if has('win32') || has('win64')
-  set rtp+=~/vim/vimfiles/bundle/vundle/
-  call vundle#rc('$HOME/vim/vimfiles/bundle/')
+  set rtp+=~/vim/vimfiles/bundle/Vundle.vim
+  call vundle#begin('$HOME/vim/vimfiles/bundle/')
 else
   " Usual quickstart instructions
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
+  set rtp+=~/.vim/vimfiles/bundle/Vundle.vim
+  call vundle#begin('$HOME/.vim/vimfiles/bundle/')
 endif
 
-
-set nocompatible
-if has("autocmd")
-  filetype plugin indent on
-endif
-
+call vundle#begin('$HOME/.vim/vimfiles/bundle/')
 
 " let Vundle manage Vundle
 " required! 
@@ -54,17 +49,30 @@ Bundle "garbas/vim-snipmate"
 Bundle "SirVer/ultisnips.git"
 Bundle "honza/vim-snippets"
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
-filetype plugin indent on     " required!
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" Put your non-Plugin stuff after this line
+
+
+filetype plugin indent on     " required!
+
+
+set nocompatible
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 
 "========================================================================
