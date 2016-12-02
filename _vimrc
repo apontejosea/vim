@@ -6,6 +6,7 @@ set ff=dos
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+
 if has('win32') || has('win64')
   set rtp+=~/vim/vimfiles/bundle/Vundle.vim
   call vundle#begin('$HOME/vim/vimfiles/bundle/')
