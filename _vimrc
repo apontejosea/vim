@@ -33,9 +33,6 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Vim-R-plugin'
-"  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"  Bundle 'tpope/vim-rails.git'
-"  vim-scripts repos
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'L9'
